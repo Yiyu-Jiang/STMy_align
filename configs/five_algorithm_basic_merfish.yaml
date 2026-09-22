@@ -1,0 +1,17 @@
+project_root: /ldap_shared/home/t_jyy/STAlign_project
+sota_add_dir: /ldap_shared/home/t_jyy/STAlign_project/STMy_align/SOTA_ADD
+
+input_summary: STMy_align/SOTA_ADD/results_spateo_affine/five_algorithm_basic_merfish_gpu/summary/five_algorithm_mean_summary.csv
+geomorph_stage_metrics: STMy_align/SOTA_ADD/results_spateo_affine/gdeba_pipeline_structure_results/gdeba_pipeline_stage_metrics.csv
+output_summary: STMy_align/SOTA_ADD/geomorph_st_code_release/outputs/five_algorithm_mean_summary_geomorph_st.csv
+replacement_log: STMy_align/SOTA_ADD/geomorph_st_code_release/outputs/gdeba_to_geomorph_replacement_log.csv
+
+replacement_rule:
+  target_algorithm: GDEBA+NR
+  source_stage_code: D
+  source_stage: GeoMorph-ST GDEBA+NR
+  preserve_other_algorithms: true
+
+datasets:
+  - basic_usage_demo
+  - MERFISH

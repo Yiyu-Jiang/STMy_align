@@ -1,0 +1,11 @@
+deformation,method,Rigid,GDEBA,Gate,NR,PCC,CI,Pairwise_MAE,Mean_NN_Distance,Runtime_s,gate_status,fallback_to_rigid,coordinates_source,Status,failure_reason
+compression,A: Rigid only,True,False,False,False,0.5986615351563208,0.3799087216008827,98.74111782303044,136.84452328046052,45.65513324737549,not_applicable,False,own_algorithm_rigid_gpu,SUCCESS,
+compression,B: Rigid + GDEBA,True,True,False,False,0.6032287958174073,0.6414564421485531,20.481480795799705,18.12176220660129,52.00920581817627,not_applied,False,own_algorithm_raw_gdeba_affine,SUCCESS,
+compression,C: Rigid + GDEBA + Gate,True,True,True,False,0.6032287958174073,0.6414564421485531,20.481480795799705,18.12176220660129,52.00920581817627,accepted,False,own_algorithm_gated_gdeba_affine,SUCCESS,
+compression,D: Rigid + GDEBA + Gate + NR,True,True,True,True,0.6053028915013363,0.6759616831335573,18.67923140317873,16.237043579450088,65.47095847129822,accepted_then_nr,False,own_algorithm_gdeba_gate_nr_gpu,SUCCESS,
+compression,E: Rigid + NR (Original Spateo),True,False,False,True,0.599845984559524,0.410802948994433,82.8988574495146,114.90778779474944,58.64065408706665,not_applicable,False,original_spateo_rigid_plus_nr_gpu,SUCCESS,
+shear,A: Rigid only,True,False,False,False,0.5756291305080472,0.3858769246200912,78.33576416615853,55.52793290177293,44.83707308769226,not_applicable,False,own_algorithm_rigid_gpu,SUCCESS,
+shear,B: Rigid + GDEBA,True,True,False,False,0.6001776190141784,0.6252068809870104,20.3262004045948,17.034452513667656,50.77557826042175,not_applied,False,own_algorithm_raw_gdeba_affine,SUCCESS,
+shear,C: Rigid + GDEBA + Gate,True,True,True,False,0.6001776190141784,0.6252068809870104,20.3262004045948,17.034452513667656,50.77557826042175,accepted,False,own_algorithm_gated_gdeba_affine,SUCCESS,
+shear,D: Rigid + GDEBA + Gate + NR,True,True,True,True,0.6072738591016036,0.7003861778424194,17.208950234983472,14.425304565192576,64.42256021499634,accepted_then_nr,False,own_algorithm_gdeba_gate_nr_gpu,SUCCESS,
+shear,E: Rigid + NR (Original Spateo),True,False,False,True,0.584874353001395,0.4525302171623451,48.55442014513066,45.18009682695414,63.6486701965332,not_applicable,False,original_spateo_rigid_plus_nr_gpu,SUCCESS,

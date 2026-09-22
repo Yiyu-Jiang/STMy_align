@@ -1,0 +1,24 @@
+project_root: /ldap_shared/home/t_jyy/STAlign_project
+sota_add_dir: /ldap_shared/home/t_jyy/STAlign_project/STMy_align/SOTA_ADD
+
+source_summary: STMy_align/SOTA_ADD/results_spateo_affine/abcde_basic_shear_compression_gpu_rerun/summary/ABCDE_basic_usage_shear_compression_gpu_metrics.csv
+output_summary: STMy_align/SOTA_ADD/geomorph_st_code_release/outputs/abcde_shear_compression_summary.csv
+paper_table: STMy_align/SOTA_ADD/geomorph_st_code_release/outputs/abcde_shear_compression_paper_table.csv
+
+scenes:
+  - compression
+  - shear
+
+methods:
+  A: Rigid only
+  B: Rigid + GDEBA
+  C: Rigid + GDEBA + Gate
+  D: Rigid + GDEBA + Gate + NR
+  E: Original Spateo NR
+
+metrics:
+  - PCC
+  - CI
+  - Pairwise_MAE
+  - Mean_NN_Distance
+  - Runtime_s
