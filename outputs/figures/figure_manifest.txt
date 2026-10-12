@@ -1,0 +1,4 @@
+compression_spateo_vs_gdeba_gate_nr_triptych.pdf
+compression_spateo_vs_gdeba_gate_nr_triptych.png
+shear_spateo_vs_gdeba_gate_nr_triptych.pdf
+shear_spateo_vs_gdeba_gate_nr_triptych.png

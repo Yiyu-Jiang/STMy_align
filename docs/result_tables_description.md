@@ -49,6 +49,21 @@ Paper-facing output:
 STMy_align/SOTA_ADD/geomorph_st_code_release/outputs/abcde_shear_compression_paper_table.csv
 ```
 
+Visualization outputs:
+
+```text
+STMy_align/SOTA_ADD/geomorph_st_code_release/outputs/figures/compression_spateo_vs_gdeba_gate_nr_triptych.png
+STMy_align/SOTA_ADD/geomorph_st_code_release/outputs/figures/compression_spateo_vs_gdeba_gate_nr_triptych.pdf
+STMy_align/SOTA_ADD/geomorph_st_code_release/outputs/figures/shear_spateo_vs_gdeba_gate_nr_triptych.png
+STMy_align/SOTA_ADD/geomorph_st_code_release/outputs/figures/shear_spateo_vs_gdeba_gate_nr_triptych.pdf
+```
+
+Each triptych uses a fixed coordinate range across panels and shows:
+
+```text
+Before alignment | Original Spateo NR | Rigid + GDEBA + Gate + Spateo NR
+```
+
 ### Main values
 
 | deformation | method | PCC | CI | Pairwise_MAE | Mean_NN_Distance | Runtime_s |

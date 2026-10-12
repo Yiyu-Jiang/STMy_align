@@ -8,6 +8,8 @@ It contains:
 - a five-algorithm real-data summary with the legacy `GDEBA+NR` rows replaced
   by the verified `GeoMorph-ST GDEBA+NR` pipeline results;
 - compression/shear A/B/C/D/E ablation tables for complex physical deformation;
+- compression/shear visualization triptychs comparing before alignment,
+  Original Spateo NR and GeoMorph-ST GDEBA+Gate+NR;
 - command-line scripts, configs, lightweight metric utilities and documentation.
 
 No raw data are copied into this release folder.  The scripts use the existing
@@ -97,6 +99,16 @@ python STMy_align/SOTA_ADD/geomorph_st_code_release/scripts/run_abcde_shear_comp
   - full compression/shear A/B/C/D/E table.
 - `outputs/abcde_shear_compression_paper_table.csv`
   - compact paper-facing columns.
+- `outputs/figures/compression_spateo_vs_gdeba_gate_nr_triptych.png`
+  and `.pdf`
+  - compression visualization:
+    `Before alignment | Original Spateo NR | Rigid + GDEBA + Gate + Spateo NR`.
+- `outputs/figures/shear_spateo_vs_gdeba_gate_nr_triptych.png`
+  and `.pdf`
+  - shear visualization:
+    `Before alignment | Original Spateo NR | Rigid + GDEBA + Gate + Spateo NR`.
+- `outputs/figures/figure_manifest.txt`
+  - list of release figure files.
 
 ## Metrics
 
