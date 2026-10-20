@@ -11,6 +11,8 @@ It contains:
 - compression/shear visualization triptychs comparing before alignment,
   Original Spateo NR and GeoMorph-ST GDEBA+Gate+NR;
 - command-line scripts, configs, lightweight metric utilities and documentation.
+- the verified upstream GDEBA implementation files used by the experiments,
+  including adaptive expression guidance, affine optimization and dual gating.
 
 No raw data are copied into this release folder.  The scripts use the existing
 project paths under `/ldap_shared/home/t_jyy/STAlign_project`.
@@ -67,6 +69,27 @@ Observed shell environment while packaging:
 Main dependencies are listed in `requirements.txt`.  SANTO, STalign and
 STAligner require their own project-specific conda environments; this release
 does not vendor those third-party packages.
+
+## Core GDEBA implementation files
+
+The original, checksum-preserving implementation files are included under
+`scripts/upstream_reference/`:
+
+- `gdeba_adaptive_expression.py`: fixed/adaptive expression guidance and
+  confidence-aware candidate scoring utilities;
+- `run_gdeba_affine.py`: GDEBA affine candidate construction and optimization
+  entry point;
+- `gdeba_dual_gate.py`: affine physical-safety, geometry-benefit,
+  biology-preservation and final non-rigid gates.
+
+The required local dependencies `run_expression_guided_affine.py`,
+`compute_spateo_affine_metrics.py`, and `isbi_gate_config.json` are stored in
+the same directory so these modules resolve consistently with the verified
+upstream code. From the release root, for example:
+
+```bash
+python scripts/upstream_reference/run_gdeba_affine.py --help
+```
 
 ## Reproduce release outputs
 

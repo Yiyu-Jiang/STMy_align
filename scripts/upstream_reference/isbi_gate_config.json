@@ -1,0 +1,29 @@
+{
+  "gate_threshold_source": "fixed before real test runs; tuned once on compression/shear synthetic development",
+  "geometry_metric_weights": {
+    "Mean_NN": 0.25,
+    "Chamfer": 0.15,
+    "Edge_IoU": 0.20,
+    "Boundary_Error": 0.20,
+    "Boundary_Chamfer": 0.10,
+    "Hausdorff": 0.10
+  },
+  "geometry_gain_threshold": 0.01,
+  "max_allowed_mean_nn_drop": 0.05,
+  "max_allowed_edge_iou_drop": 0.05,
+  "max_allowed_boundary_error_drop": 0.10,
+  "pcc_tolerance": 0.015,
+  "ci_tolerance": 0.010,
+  "expr_cosine_tolerance": 0.002,
+  "biology_score_min": -0.005,
+  "min_singular_value": 0.5,
+  "max_singular_value": 2.0,
+  "max_condition_number": 10.0,
+  "min_area_ratio": 0.25,
+  "max_area_ratio": 4.0,
+  "max_abs_shear_cosine": 0.75,
+  "final_geometry_gain_threshold": 0.0,
+  "max_fold_ratio": 0.01,
+  "max_jacobian_low_ratio": 0.20,
+  "max_jacobian_high_ratio": 0.20
+}
